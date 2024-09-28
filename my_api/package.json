@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "deploy": "node start.js",
+    "db:migrate": "sequelize db:migrate",
+    "db:seed": "sequelize db:seed:all",
+    "db:drop": "sequelize db:drop",
+    "db:create": "sequelize db:create",
+    "db:reset": "run-s db:drop db:create"
+  },
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "koa": "^2.15.3",
+    "koa-body": "^6.0.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^13.0.1",
+    "mqtt": "^5.10.1",
+    "nodemon": "^3.1.7",
+    "pg": "^8.13.0",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2"
+  },
+  "name": "grupo14_backend",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/mane6867/grupo14_backend.git",
+  "author": "mane6867 <magdalena.pino@uc.cl>",
+  "license": "MIT",
+  "private": false
+}
