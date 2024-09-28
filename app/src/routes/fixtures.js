@@ -97,7 +97,7 @@ async function getFixture(ctx) {
 }
 
 // Rutas
-router.post("/add", async (ctx) => {
+router.post("/", async (ctx) => {
     const fixturesData = ctx.request.body;
 
     try {
