@@ -112,6 +112,17 @@ router.post("/", async (ctx) => {
 });
 
 router.get("/", async (ctx) => getFixtures(ctx));
+//router.get('pasajeros.list', '/', async (ctx) => {
+//    try {
+//      const pasajeros = await ctx.orm.Partido.findAll()
+//      ctx.body = pasajeros
+//      ctx.status = 200
+//    } catch (error) {
+//      ctx.body = error
+//      ctx.status = 400
+//    }
+//  })
+
 router.get("/:id", async (ctx) => getFixture(ctx));
 
 module.exports = router;
